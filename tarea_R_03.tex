@@ -1,0 +1,96 @@
+\documentclass[10pt]{article}
+
+\usepackage{vmargin}
+
+\setpapersize{A4}
+\setmargins{2.5cm}       % margen izquierdo
+{1.5cm}                        % margen superior
+{16.5cm}                      % anchura del texto
+{23.42cm}                    % altura del texto
+{10pt}                           % altura de los encabezados
+{1cm}                           % espacio entre el texto y los encabezados
+{0pt}                             % altura del pie de p‡gina
+{2cm}                           % espacio entre el texto y el pie de p‡gina
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage{mathtools}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\spanishdecimal{.}
+\usepackage{color}
+
+\begin{document}
+
+Curso: \textit{ \textbf{Introducci\'on al Lenguaje de Programaci\'on R}}
+
+\vspace{3mm}
+
+{\color{red} {\Large Tarea 3}}. Entregar antes del 27 de febrero, 2018.
+
+\vspace{3mm}
+
+{\large $>>>>>>$ NOTA. Es parte de la tarea}
+
+\vspace{3mm}
+
+Profesor: L. Gonz\'alez-Santos\footnote{lgs@unam.mx}
+
+\hrulefill
+
+\begin{enumerate}
+\item \textbf{Regresi\'on lineal simple}. Se desea encontra la ecuaci\'on de la recta que describe la serie de puntos $\{(X_i, Y_i) | i  = 1 ... n\}$, la ecuaci\'on esta dada por:
+
+\[
+{\displaystyle Y_{i}=\beta _{0}+\beta _{1}X_{i}+\varepsilon _{i}} {\displaystyle }
+\]
+
+donde ${\displaystyle \varepsilon _{i}} $ es el error asociado a la medici\'on del valor ${\displaystyle Y_{i}}$ y siguen los supuestos de modo que ${\displaystyle \varepsilon _{i}\sim N(0,\sigma ^{2})} $ (media cero, varianza constante e igual a un ${\displaystyle \sigma^2 } $ y ${\displaystyle \varepsilon _{i}\perp \varepsilon _{j}} $ con ${\displaystyle i\neq j} $).
+
+\vspace{2mm}
+
+Utilizando el m\'etodo de m\'inimos cuadrados se encuentra los valores de $\beta_0$ y $\beta_1$ mejor describen la recta: 
+
+\vspace{2mm}
+
+\[
+{\displaystyle {\hat {\beta _{1}}}={\frac {\sum x\sum y-n\sum xy}{\left(\sum x\right)^{2}-n\sum x^{2}}}={\frac {\sum (x-{\bar {x}})(y-{\bar {y}})}{\sum (x-{\bar {x}})^{2}}}} 
+\]
+
+\[
+{\displaystyle {\hat {\beta _{0}}}={\frac {\sum y-{\hat {\beta }}_{1}\sum x}{n}}={\bar {y}}-{\hat {\beta _{1}}}{\bar {x}}} 
+\]
+
+\begin{enumerate}
+\item Aplicar la regresi\'on lineal simple a los puntos \{(1, 0), (2, 3), (3, 2), (4, 5), (5, 3), (6, 8), (7, 7), (8, 8), (9, 10), (10, 10), (11, 10), (12, 14)\}
+\item Graficar los puntos y la recta ajustada.
+\item A partir de la recta encontrar los valores en los puntos $x_1=6.5, x_2=0, x_3=17$
+\end{enumerate}
+\item Apartir de los 3 grupos de edades: 
+G1= \{ 39, 59, 56, 47, 36, 48, 38, 53, 23, 49, 65, 69\}, G2=\{60, 67, 56, 65, 62, 58, 54, 73, 84, 78\}, 
+G3=\{58, 27, 26, 57, 49, 49, 55, 62, 54, 36, 71, 50, 37, 66, 25\}, hacer una gr\'afica de barras sus medias, con sus respectivos errores est\'andard.
+
+\item A partir  de la poblaci\'on de edades: 38, 36, 45, 54, 18, 26, 21, 50, 51, 53, 18, 33, 49, 25, 29, 36, 65, 49, 49, 29,
+54, 58, 40, 31, 30, 35, 56, 64, 54, 54, 40, 44, 51, 21, 25, 30, 52, 64, 48, 59,
+61, 60, 26, 36, 36, 24, 32, 26, 20, 31, 23, 63, 42, 28, 45, 61, 61, 49, 32, 43,
+52, 58, 42, 59, 59, 56, 56, 55, 62, 46, 45, 24, 58, 38, 57, 35, 18, 43, 30, 35,
+43, 55, 30, 21, 22, 20, 60, 36, 52, 34, 26, 25, 60, 41, 18, 29, 28, 45, 56, 32. 
+
+\vspace{2mm}
+
+Tomar 30 muestras de tama\~no 10 sin repetici\'on de la poblaci\'on, hacer lo siguiente.
+
+\begin{enumerate}
+\item Calcular la media de cada muestra y hacer una gr\'afica de dispersi\'on de las 30 medias.
+
+\item A\~nadir en la gr\'afica, lineas que muestren la media de la poblaci\'on y la media de las medias muestrales. 
+
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+\end{document}
+
